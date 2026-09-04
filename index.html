@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/wallet-pass-customer-retention-system/">
+<!-- BASE:END -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+<meta name="theme-color" content="#050507">
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+<!-- SEO Meta Tags -->
+<title>Customer Retention System | Digital Wallet Loyalty, Rewards &amp; Automation</title>
+<meta name="description" content="Turn existing customers into repeat customers with branded digital wallet rewards, points or punch programs, push notifications, SMS, email, automation and measurable engagement." />
+<meta name="keywords" content="digital wallet loyalty customer retention" />
+<meta property="og:title" content="Customer Retention System | Digital Wallet Loyalty, Rewards &amp; Automation" />
+<meta property="og:description" content="Turn existing customers into repeat customers with branded digital wallet rewards, points or punch programs, push notifications, SMS, email, automation and measurable engagement." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Customer Retention System | Digital Wallet Loyalty, Rewards &amp; Automation" />
+<meta name="twitter:description" content="Turn existing customers into repeat customers with branded digital wallet rewards, points or punch programs, push notifications, SMS, email, automation and measurable engagement." />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mtm5t7k4-et0et";
+  var SITEK="";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  function siteTok(){try{return SITEK?localStorage.getItem(SITEK):null;}catch(e){return null;}}
+  var u=new URL(location.href);var found=null;var changed=false;
+  var PINP=true;
+  if(!PINP){try{localStorage.removeItem('lp_pin_'+slug);if(SITEK)localStorage.removeItem(SITEK);}catch(e){}}
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{if(PINP||p!=='pin_access_token'){localStorage.setItem(map[p]+slug,v);if(SITEK&&p==='pin_access_token')localStorage.setItem(SITEK,v);}}catch(e){}if(p==='pin_access_token'){try{sessionStorage.setItem('lp_fresh_'+slug,'1');}catch(e){}}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://paymegpt.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=6860');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='hFEXZn';
+  var apiBase='https://paymegpt.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    var phone=findPhone();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,phone:phone||'',amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var sidP=urlParams.get('session_id');
+      if(sidP){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidP})}).catch(function(){});}catch(e){}}
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-donation>
+(function(){
+  var slug='hFEXZn';
+  var apiBase='https://paymegpt.com';
+  var currency='USD';
+  var minAmt=100;var maxAmt=1000000;
+  var thankYouMsg='Thank you for your generous donation!';var successSubtext='Your donation has been processed successfully.';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function getLang(){var l=(document.documentElement.lang||navigator.language||'en').toLowerCase();return l.split('-')[0];}
+  function getLocale(){return (document.documentElement.lang||navigator.language||'en');}
+  var I18N={en:{min:'Minimum is ',max:'Maximum is ',emailPrompt:'Enter your email for the receipt:',emailRequired:'An email address is required to complete checkout.',failed:'Failed to process donation'},fr:{min:'Le minimum est ',max:'Le maximum est ',emailPrompt:'Entrez votre adresse e-mail pour le reçu :',emailRequired:'Une adresse e-mail est requise pour finaliser le paiement.',failed:'Échec du traitement du don'},es:{min:'El mínimo es ',max:'El máximo es ',emailPrompt:'Introduce tu correo electrónico para el recibo:',emailRequired:'Se requiere una dirección de correo electrónico para completar el pago.',failed:'No se pudo procesar la donación'},pt:{min:'O mínimo é ',max:'O máximo é ',emailPrompt:'Insira seu e-mail para o recibo:',emailRequired:'Um endereço de e-mail é necessário para concluir o pagamento.',failed:'Falha ao processar a doação'},de:{min:'Mindestbetrag ist ',max:'Höchstbetrag ist ',emailPrompt:'Geben Sie Ihre E-Mail-Adresse für die Quittung ein:',emailRequired:'Eine E-Mail-Adresse ist erforderlich, um den Checkout abzuschließen.',failed:'Spende konnte nicht verarbeitet werden'},it:{min:'Il minimo è ',max:'Il massimo è ',emailPrompt:'Inserisci la tua email per la ricevuta:',emailRequired:"È richiesto un indirizzo email per completare il pagamento.",failed:'Impossibile elaborare la donazione'}};
+  function t(k){var L=getLang();return (I18N[L]&&I18N[L][k])||I18N.en[k];}
+  function fmtD(c){try{return new Intl.NumberFormat(getLocale(),{style:'currency',currency:currency}).format(c/100);}catch(e){return new Intl.NumberFormat('en-US',{style:'currency',currency:currency}).format(c/100);}}
+  window.__donationConfig={currency:currency,presets:[25,50,100,250],minAmount:100/100,maxAmount:1000000/100,formatAmount:fmtD,buttonColor:'#4f46e5',buttonText:'Donate Now',thankYouMessage:'Thank you for your generous donation!'};
+  function findDonEmail2(){var ids=['email','emailAddress','buyer-email','buyerEmail','donor-email','donorEmail','user-email','userEmail','contact-email'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.indexOf('@')>-1)return el.value.trim();}var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.indexOf('@')>-1)return inputs[j].value.trim();}return '';}
+  function findDonName2(){var ids=['name','fullName','full-name','donor-name','donorName','customer-name','user-name'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"])');for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}return '';}
+  function findDonPhone2(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  window.__processDonation=function(a,b,c,d){
+    var amountCents,email='',name='',donorMessage='',productName='',productDescription='',quantity=1;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents||(a.amount?Math.round(Number(a.amount)*100):0);
+      email=a.email||'';
+      productName=a.productName||a.label||'';
+      productDescription=a.productDescription||a.description||'';
+      name=a.name||a.donorName||'';
+      donorMessage=a.message||a.donorMessage||'';
+      quantity=a.quantity&&parseInt(a.quantity,10)>0?parseInt(a.quantity,10):1;
+    }else{
+      amountCents=typeof a==='number'?a:(parseInt(a,10)||0);
+      var rest=[b,c,d];var nonEmail=[];
+      for(var i=0;i<rest.length;i++){var v=rest[i];if(typeof v==='string'&&v){if(!email&&v.indexOf('@')>-1&&/^[^s@]+@[^s@]+.[^s@]+$/.test(v.trim())){email=v.trim();}else{nonEmail.push(v);}}}
+      name=nonEmail[0]||'';donorMessage=nonEmail[1]||'';
+    }
+    if(!email)email=findDonEmail2();
+    if(!name)name=findDonName2();
+    var donorPhone=findDonPhone2();
+    if(!amountCents||amountCents<minAmt){alert(t('min')+fmtD(minAmt));return Promise.reject('below_min');}
+    if(amountCents>maxAmt){alert(t('max')+fmtD(maxAmt));return Promise.reject('above_max');}
+    if(!email){var p=window.prompt(t('emailPrompt'),'');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert(t('emailRequired'));return;}}
+    var successBase=window.location.href.split('?')[0];
+    fetch(apiBase+'/api/landing-pages/public/'+slug+'/donation/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:name||'',phone:donorPhone||'',amountCents:amountCents,message:donorMessage||'',productName:productName||'',productDescription:productDescription||'',quantity:quantity,locale:getLocale(),successUrl:successBase+'?donation=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?donation=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||t('failed'));}
+    }).catch(function(){alert(t('failed'));});
+  };
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('donation')==='success'){
+      var sidD=urlParams.get('session_id');
+      if(sidD){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidD})}).catch(function(){});}catch(e){}}
+      var overlay=document.createElement('div');overlay.id='donation-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">'+esc(thankYouMsg)+'</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(successSubtext)+'</p><button id="lp-don-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var dBtn=document.getElementById('lp-don-success-btn');
+      if(dBtn){dBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-cart>
+(function(){
+  var slug='hFEXZn';
+  var apiBase='https://paymegpt.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findCartEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realCart=function(arg){
+    var items, email='', customerName='', successUrl, cancelUrl, currency;
+    if(Array.isArray(arg)){items=arg;}
+    else if(arg&&typeof arg==='object'){
+      items=arg.items;email=arg.email||'';customerName=arg.name||arg.customerName||'';
+      successUrl=arg.successUrl;cancelUrl=arg.cancelUrl;currency=arg.currency;
+    }
+    if(!Array.isArray(items)||items.length===0){alert('No items in cart.');return Promise.reject('no_items');}
+    var cleanItems=[];var totalCents=0;
+    for(var i=0;i<items.length;i++){
+      var it=items[i];if(!it||typeof it!=='object'){alert('Invalid item at position '+i);return Promise.reject('bad_item');}
+      var nm=typeof it.name==='string'?it.name.trim():'';
+      if(!nm){alert('Item '+(i+1)+' is missing a name.');return Promise.reject('no_name');}
+      var amt=typeof it.amountCents==='number'?it.amountCents:(typeof it.amount==='number'?Math.round(it.amount*100):NaN);
+      if(!isFinite(amt)||amt<1){alert('Item "'+nm+'" needs a valid amount in cents.');return Promise.reject('bad_amount');}
+      var qty=(typeof it.quantity==='number'&&it.quantity>0)?Math.floor(it.quantity):1;
+      cleanItems.push({name:nm,description:it.description||'',amountCents:amt,quantity:qty});
+      totalCents+=amt*qty;
+    }
+    if(totalCents<50){alert('Cart total must be at least $0.50');return Promise.reject('total_too_low');}
+    if(!email)email=findCartEmail();
+    if(!customerName)customerName=findCartName();
+    var cartPhone=findCartPhone();
+    if(!email){var p=window.prompt('Enter your email for the receipt:','');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert('An email address is required to complete checkout.');return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    var body={email:email,name:customerName,items:cleanItems,locale:(document.documentElement.lang||navigator.language||'en')};
+    if(currency)body.currency=currency;
+    if(cartPhone)body.phone=cartPhone;
+    body.successUrl=successUrl||(successBase+'?cart=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}');
+    body.cancelUrl=cancelUrl||(successBase+'?cart=cancelled');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/cart/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process checkout');throw new Error(d.error);}
+    });
+  };
+  try{Object.defineProperty(window,'__processCart',{value:__realCart,writable:false,configurable:false});}catch(e){window.__processCart=__realCart;}
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('cart')==='success'){
+      var sidC=urlParams.get('session_id');
+      if(sidC){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidC})}).catch(function(){});}catch(e){}}
+      if(document.getElementById('payment-success-overlay')||document.getElementById('donation-success-overlay')||document.getElementById('cart-success-overlay'))return;
+      var overlay=document.createElement('div');overlay.id='cart-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||'Thank you for your order.';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var cBtn=document.getElementById('lp-cart-success-btn');
+      if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- ============================================================================ -->
+<!-- NAVBAR: Sticky navigation and conversion action                               -->
+<!-- ============================================================================ -->
+<nav data-section="navbar" class="fixed inset-x-0 top-0 z-50 px-4 md:px-8 py-3">
+      <div class="mx-auto max-w-7xl glass rounded-full px-4 md:px-6 h-14 flex items-center justify-between">
+      <a href="#top" class="font-black tracking-[-.06em] text-xl" aria-label="RetentionOS home">RETENTION<span class="text-cyan-300">OS</span></a>
+      <div class="hidden md:flex gap-7 text-sm text-white/60">
+        <a class="nav-link hover:text-white" href="#rewards">Rewards</a><a class="nav-link hover:text-white" href="#reach">Reach</a><a class="nav-link hover:text-white" href="#automation">Automation</a><a class="nav-link hover:text-white" href="#results">Results</a>
+      </div>
+      <a href="#demo" class="cta !min-h-10 !px-4 text-xs md:text-sm">See it for my business</a>
+    </div>
+</nav>
+
+<main>
+<!-- ============================================================================ -->
+<!-- HERO: Core positioning and cinematic wallet device                            -->
+<!-- ============================================================================ -->
+<section data-section="hero" id="top" class="relative min-h-screen overflow-hidden grid-glow px-4 pt-32 pb-14 md:px-8">
+  <div class="orb w-80 h-80 bg-blue-600/50 -left-32 top-1/3"></div><div class="orb w-96 h-96 bg-fuchsia-600/30 -right-40 top-24"></div>
+  <div class="mx-auto max-w-7xl text-center relative z-10">
+    <p class="hero-item kicker text-cyan-300 mb-6">Customer retention, rebuilt.</p>
+    <h1 class="hero-item display max-w-6xl mx-auto">Your best customer is the one you <span class="shine">already have.</span></h1>
+    <p class="hero-item mt-7 mx-auto max-w-2xl text-lg md:text-2xl text-white/65">Turn everyday customers into repeat customers with a branded loyalty experience that lives directly on their phone.</p>
+    <div class="hero-item mt-6 text-xs md:text-sm text-white/45 tracking-widest">POINTS · PUNCHES · PUSH · SMS · EMAIL · AUTOMATION</div>
+    <div class="hero-item mt-8 flex flex-col sm:flex-row justify-center gap-3"><a class="cta" href="#demo">See what this could do for my business</a><a class="cta !bg-white/10 !text-white border border-white/15" href="#system">Explore the system</a></div>
+    <div class="relative mt-14 min-h-[590px] flex justify-center items-start">
+      <div class="aura"></div>
+      <div id="heroPhone" class="phone relative z-10">
+        <div class="island"></div><div class="screen">
+          <div class="flex justify-between text-[10px] text-white/60 mb-5"><b>NORTHSTAR</b><span>LOYALTY</span></div>
+          <div class="pass text-left">
+            <p class="text-xs text-white/70">Welcome back, Maya</p><p class="mt-5 text-sm">Your points</p><p class="text-6xl font-black tracking-[-.07em]">385</p>
+            <div class="progress mt-5"><i></i></div><div class="flex justify-between mt-2 text-[10px]"><span>385 points</span><span>500 reward</span></div>
+            <p class="mt-5 text-sm font-bold">115 points to your next reward</p>
+          </div>
+          <div class="grid grid-cols-3 gap-2 mt-4"><div class="mini-btn">Order Now</div><div class="mini-btn">Call</div><div class="mini-btn">Specials</div></div>
+          <div class="mt-5 card p-4 text-left"><p class="text-xs text-cyan-300">MEMBER OFFER</p><p class="mt-1 text-sm font-bold">Double points this Tuesday.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================================ -->
+<!-- VALUE: Retention system positioning                                            -->
+<!-- ============================================================================ -->
+<section data-section="real-value" class="px-4 py-24 md:px-8 md:py-36 bg-white text-black">
+  <div class="max-w-7xl mx-auto"><p class="kicker text-blue-600">The real value</p><h2 class="section-title max-w-5xl mt-5">Not another loyalty card. A reason to come back.</h2><p class="mt-7 text-xl md:text-2xl text-black/55 max-w-3xl">The pass is the interface. Underneath: rewards, customer data, direct communication, automation and insight—working together to grow frequency and lifetime value.</p>
+  <div class="grid md:grid-cols-3 gap-4 mt-16">
+    <article class="reveal rounded-[2rem] p-7 md:p-10 bg-black text-white min-h-64 flex flex-col justify-end"><span class="text-cyan-300 kicker">01</span><h3 class="text-4xl md:text-6xl font-black tracking-tighter">RETAIN.</h3><p class="text-white/55 mt-3">Keep the relationship active after checkout.</p></article>
+    <article class="reveal rounded-[2rem] p-7 md:p-10 bg-gradient-to-br from-blue-600 to-violet-600 text-white min-h-64 flex flex-col justify-end"><span class="kicker">02</span><h3 class="text-4xl md:text-6xl font-black tracking-tighter">REWARD.</h3><p class="text-white/70 mt-3">Make every visit move toward something.</p></article>
+    <article class="reveal rounded-[2rem] p-7 md:p-10 bg-[#c9ff4a] min-h-64 flex flex-col justify-end"><span class="kicker">03</span><h3 class="text-4xl md:text-6xl font-black tracking-tighter">REACTIVATE.</h3><p class="text-black/60 mt-3">Create timely reasons to return.</p></article>
+  </div></div>
+</section>
+
+<!-- ============================================================================ -->
+<!-- REWARDS: Points and punch-card experiences                                     -->
+<!-- ============================================================================ -->
+<section data-section="rewards" id="rewards" class="px-4 py-24 md:px-8 md:py-36">
+ <div class="max-w-7xl mx-auto text-center"><p class="kicker text-cyan-300">Two ways to build the habit</p><h2 class="section-title mt-5">Progress they can feel.</h2>
+ <div class="grid lg:grid-cols-2 gap-5 mt-16 text-left">
+  <article class="reveal card p-6 md:p-10 overflow-hidden">
+    <p class="kicker text-cyan-300">Points</p><h3 class="text-4xl md:text-6xl font-bold tracking-tighter mt-4">Every dollar moves them closer.</h3><p class="text-white/55 mt-5">$1 spent = 1 point. 500 points = $50 reward. Accumulated progress gives customers another reason to choose you again.</p>
+    <div class="mt-10 mx-auto max-w-[360px] story-panel p-4 md:p-5">
+      <div class="phone sm mx-auto shadow-2xl" id="pointsPhone"><div class="island"></div><div class="screen">
+        <p class="text-xs text-white/50">POINT BALANCE</p><p class="point-count text-6xl font-black mt-4">385</p><div class="progress mt-6"><i class="point-progress"></i></div><p class="mt-3 text-xs text-white/55">Moving toward 500</p><div class="mt-8 card p-4"><b>+35 points</b><p class="text-xs text-white/45 mt-1">Today's purchase</p></div>
+      </div></div>
+    </div>
+  </article>
+  <article class="reveal card p-6 md:p-10 overflow-hidden">
+    <p class="kicker text-lime-300">Punches</p><h3 class="text-4xl md:text-6xl font-bold tracking-tighter mt-4">Simple. Visual. Addictive.</h3><p class="text-white/55 mt-5">Visit 10 times. The next one is free. A clear experience that helps create a repeat-visit habit.</p>
+    <div class="mt-10 mx-auto max-w-[360px] story-panel p-4 md:p-5">
+      <div class="phone sm mx-auto shadow-2xl" id="punchPhone"><div class="island"></div><div class="screen"><p class="text-sm text-white/50">VISIT CARD</p><p class="text-4xl font-black mt-3">7 of 10</p><div class="punch-grid grid grid-cols-5 gap-3 mt-8"></div><div class="mt-8 rounded-2xl bg-lime-300 text-black p-4"><b>3 visits to your reward</b><p class="text-xs mt-1">Keep going.</p></div></div></div>
+    </div>
+    <p class="mt-7 text-xs text-white/40">Built for cafés, restaurants, bars, golf, salons, gyms, car washes and other frequency businesses.</p>
+  </article>
+ </div></div>
+</section>
+
+<!-- ============================================================================ -->
+<!-- REACH: Direct wallet, SMS, email and location-aware engagement                 -->
+<!-- ============================================================================ -->
+<section data-section="reach" id="reach" class="relative overflow-hidden px-4 py-24 md:px-8 md:py-36 bg-gradient-to-b from-[#111131] to-black">
+ <div class="max-w-7xl mx-auto text-center"><p class="kicker text-pink-300">Stay connected</p><h2 class="section-title mt-5">The transaction ends.<br>The relationship doesn't.</h2>
+ <div class="relative min-h-[690px] mt-14 flex items-center justify-center">
+  <div class="phone sm reveal"><div class="island"></div><div class="screen"><p class="text-xs text-cyan-300">NORTHSTAR WALLET</p><h3 class="text-3xl font-black mt-4">Still in reach.</h3><p class="text-sm text-white/50 mt-3">Timely messages. Direct channels. One customer record.</p><div class="mt-8 pass"><b>Double points tonight</b><p class="text-xs mt-1">5–8 PM. See you soon.</p></div></div></div>
+  <div class="desktop-orbit absolute inset-0">
+   <article class="orbit-card card p-5 md:absolute md:left-[3%] md:top-[8%] max-w-xs text-left"><b class="text-cyan-300">Wallet Push</b><p class="mt-2">“Double points tonight from 5–8 PM.”</p></article>
+   <article class="orbit-card card p-5 md:absolute md:right-[2%] md:top-[18%] max-w-sm text-left"><b class="text-lime-300">SMS</b><p class="mt-2 text-sm">“We haven't seen you in a while. Return this weekend and receive 50 bonus points.”</p></article>
+   <article class="orbit-card card p-5 md:absolute md:left-[1%] md:bottom-[13%] max-w-xs text-left"><b class="text-pink-300">Email</b><p class="mt-2">Rich campaigns with open and click indicators.</p></article>
+   <article class="orbit-card card p-5 md:absolute md:right-[1%] md:bottom-[5%] max-w-sm text-left"><b class="text-violet-300">Location-aware wallet engagement</b><p class="mt-2 text-sm text-white/60">Configured business locations can help surface relevant wallet information when appropriate.</p></article>
+  </div>
+ </div><p class="text-2xl md:text-4xl font-bold max-w-4xl mx-auto">Social media hopes they see you. <span class="text-cyan-300">Your customer list lets you reach them directly.</span></p></div>
+</section>
+
+<!-- ============================================================================ -->
+<!-- SLOW DAYS: Sticky campaign-to-demand story                                     -->
+<!-- ============================================================================ -->
+<section data-section="slow-days" class="px-4 py-24 md:px-8 md:py-36 bg-[#f4f2ff] text-black">
+ <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 md:gap-24 items-start">
+  <div class="sticky-scene md:sticky md:top-28 self-start">
+    <p class="kicker text-violet-600">Create demand on demand</p><h2 class="section-title mt-5">Tuesday is slow.</h2><p class="text-xl text-black/55 mt-6">Send loyalty members: <b class="text-black">DOUBLE POINTS 4–8 PM TODAY.</b></p><p class="mt-4 text-lg">Give customers a reason to choose today instead of someday.</p>
+    <div class="mt-8 reveal story-panel bg-black text-white p-5 md:p-7">
+      <div class="flex items-center justify-between"><b>Campaign preview</b><span class="text-xs text-white/40">ILLUSTRATIVE VIEW</span></div>
+      <div class="mt-5 flex items-center gap-4">
+        <div class="phone sm !w-[184px] !h-[378px] shrink-0"><div class="island"></div><div class="screen"><p class="text-xs text-cyan-300">MESSAGE PREVIEW</p><p class="mt-4 text-2xl font-black">Double points tonight.</p><div class="mt-6 pass !p-4"><p class="text-xs text-white/70">5–8 PM</p><p class="mt-2 text-sm font-semibold">See you soon.</p></div></div></div>
+        <div class="text-sm text-black/70 bg-white rounded-2xl p-4 flex-1"><p class="font-semibold">Offer appears from the phone, then the activity rises.</p><p class="mt-2 text-xs text-black/45">Illustrative only—no guaranteed outcome.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="space-y-6">
+   <div class="reveal rounded-[2rem] bg-black text-white p-6 md:p-10"><div class="flex justify-between"><b>Weekly visits</b><span class="text-xs text-white/40">ILLUSTRATIVE VIEW</span></div><div class="h-64 flex items-end gap-3 mt-8"><div class="chart-bar bg-white/25 h-[70%] flex-1 rounded-t-xl"></div><div id="tuesdayBar" class="chart-bar bg-gradient-to-t from-violet-600 to-cyan-300 h-[18%] flex-1 rounded-t-xl"></div><div class="chart-bar bg-white/25 h-[76%] flex-1 rounded-t-xl"></div><div class="chart-bar bg-white/25 h-[88%] flex-1 rounded-t-xl"></div><div class="chart-bar bg-white/25 h-[65%] flex-1 rounded-t-xl"></div></div><div class="grid grid-cols-5 text-center text-xs text-white/40 mt-3"><span>M</span><span>Tue</span><span>W</span><span>T</span><span>F</span></div></div>
+   <div class="campaign-card rounded-[2rem] bg-gradient-to-br from-violet-600 to-blue-500 p-8 text-white"><p class="kicker">Campaign ready</p><p class="text-3xl font-black mt-3">Double points.<br>Today only.</p><button class="mt-8 bg-white text-black rounded-full px-5 py-3 font-bold illustrative-send">Preview message</button><p class="preview-note hidden mt-4 text-sm">Preview activated—no message was sent.</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- ============================================================================ -->
+<!-- REACTIVATION: Campaign scenarios                                               -->
+<!-- ============================================================================ -->
+<section data-section="reactivation" class="px-4 py-24 md:px-8 md:py-36 overflow-hidden">
+ <div class="max-w-7xl mx-auto"><p class="kicker text-orange-300">Bring customers back</p><h2 class="section-title max-w-5xl mt-5">Acquiring a customer is expensive. Letting the relationship go quiet is optional.</h2><p class="mt-7 text-xl text-white/55 max-w-3xl">Use the customer base you already built to create demand when the business needs it most.</p>
+ <div class="flex gap-4 overflow-x-auto snap-x pb-5 mt-14">
+  <article class="reveal card p-7 min-w-[280px] md:min-w-[360px] snap-center"><span>👋</span><h3 class="text-2xl font-bold mt-8">We miss you</h3><p class="text-white/50 mt-3">A thoughtful win-back offer.</p></article>
+  <article class="reveal card p-7 min-w-[280px] md:min-w-[360px] snap-center"><span>🎂</span><h3 class="text-2xl font-bold mt-8">Birthday reward</h3><p class="text-white/50 mt-3">Celebrate the customer, directly.</p></article>
+  <article class="reveal card p-7 min-w-[280px] md:min-w-[360px] snap-center"><span>✨</span><h3 class="text-2xl font-bold mt-8">New launch</h3><p class="text-white/50 mt-3">Bring members in for what is new.</p></article>
+  <article class="reveal card p-7 min-w-[280px] md:min-w-[360px] snap-center"><span>42</span><h3 class="text-2xl font-bold mt-8">Almost earned</h3><p class="text-white/50 mt-3">“You're only 42 points away.”</p></article>
+  <article class="reveal card p-7 min-w-[280px] md:min-w-[360px] snap-center"><span>VIP</span><h3 class="text-2xl font-bold mt-8">Member event</h3><p class="text-white/50 mt-3">A double-points moment for insiders.</p></article>
+ </div></div>
+</section>
+
+<!-- ============================================================================ -->
+<!-- AUTOMATION: Behavior-based lifecycle engine                                    -->
+<!-- ============================================================================ -->
+<section data-section="automation" id="automation" class="px-4 py-24 md:px-8 md:py-36 bg-[#0e1020]">
+ <div class="max-w-7xl mx-auto text-center"><p class="kicker text-lime-300">Automation engine</p><h2 class="section-title mt-5">The follow-up happens even when you're busy.</h2>
+ <div class="mt-16 card p-6 md:p-12 overflow-hidden">
+  <div class="grid grid-cols-3 md:grid-cols-6 gap-3 relative">
+   <div class="life-step module">JOIN</div><div class="life-step module">EARN</div><div class="life-step module">ENGAGE</div><div class="life-step module">REWARD</div><div class="life-step module">RETURN</div><div class="life-step module">REPEAT</div>
+   <div class="life-signal absolute left-0 top-1/2 -translate-y-1/2 h-[2px] w-full bg-white/10 overflow-hidden rounded-full pointer-events-none"><span class="block h-full w-1/5 bg-gradient-to-r from-cyan-300 via-violet-500 to-pink-400"></span></div>
+  </div><div class="journey-line mt-8"></div><p class="mt-9 text-lg text-white/60 max-w-4xl mx-auto">Customer joins → wallet added → welcome → points earned → reward unlocked → congratulations → redemption → next reward.</p></div>
+ <p class="mt-9 max-w-4xl mx-auto text-white/55">Build behavior-based journeys around card issued, card installed, punch or points added, reward unlocked or redeemed, coupon claimed and low balance—not merely scheduled blasts.</p></div>
+</section>
+
+<!-- ============================================================================ -->
+<!-- CRM: Example customer records and metrics                                      -->
+<!-- ============================================================================ -->
+<section data-section="customer-insight" class="px-4 py-24 md:px-8 md:py-36 bg-white text-black">
+ <div class="max-w-7xl mx-auto"><p class="kicker text-blue-600">Know your customers</p><h2 class="section-title mt-5">Anonymous visits become relationships.</h2><p class="mt-6 text-xl text-black/55 max-w-3xl">Signups can become identifiable customer records with name, email, phone, tags, reward status and engagement history.</p>
+ <div class="reveal mt-14 rounded-[2rem] bg-[#0b0c11] text-white p-5 md:p-9 shadow-2xl">
+  <div class="flex justify-between items-center"><b>Example dashboard</b><span class="text-xs text-white/40">ILLUSTRATIVE METRICS</span></div>
+  <div class="dashboard-shell mt-7 p-4 md:p-6">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+      <div class="dashboard-metric"><div class="metric counter" data-value="2487">0</div><p class="text-white/45">Loyalty members</p></div>
+      <div class="dashboard-metric"><div class="metric counter" data-value="1938">0</div><p class="text-white/45">Reachable by email</p></div>
+      <div class="dashboard-metric"><div class="metric counter" data-value="1742">0</div><p class="text-white/45">Reachable by SMS</p></div>
+      <div class="dashboard-metric"><div class="metric counter" data-value="318">0</div><p class="text-white/45">Rewards redeemed</p></div>
+    </div>
+    <div class="grid lg:grid-cols-[1.2fr,.8fr] gap-4 mt-4">
+      <div class="rounded-[24px] bg-white/5 border border-white/10 p-4">
+        <div class="flex items-center justify-between"><p class="font-semibold">Engagement timeline</p><span class="text-xs text-white/35">ILLUSTRATIVE ONLY</span></div>
+        <div class="mt-5 h-40 flex items-end gap-2"><div class="chart-bar bg-white/15 h-[48%] flex-1 rounded-t-xl"></div><div class="chart-bar bg-gradient-to-t from-violet-600 to-cyan-300 h-[66%] flex-1 rounded-t-xl"></div><div class="chart-bar bg-white/15 h-[40%] flex-1 rounded-t-xl"></div><div class="chart-bar bg-white/15 h-[74%] flex-1 rounded-t-xl"></div><div class="chart-bar bg-white/15 h-[58%] flex-1 rounded-t-xl"></div><div class="chart-bar bg-gradient-to-t from-pink-500 to-orange-400 h-[82%] flex-1 rounded-t-xl"></div></div>
+      </div>
+      <div class="rounded-[24px] bg-white/5 border border-white/10 p-4">
+        <div class="flex items-center justify-between"><p class="font-semibold">Recent activity</p><span class="text-xs text-white/35">ILLUSTRATIVE ONLY</span></div>
+        <div class="mt-4 space-y-3 text-sm">
+          <div class="flex justify-between border-b border-white/8 pb-3"><span>Maya R.</span><span class="text-white/45">Points added · SMS</span></div>
+          <div class="flex justify-between border-b border-white/8 pb-3"><span>Jordan K.</span><span class="text-white/45">Campaign clicked · Email</span></div>
+          <div class="flex justify-between"><span>Alina S.</span><span class="text-white/45">Reward redeemed · Wallet</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-4 overflow-x-auto"><table class="w-full min-w-[620px] text-left text-sm"><thead class="text-white/35"><tr><th class="p-3">Customer</th><th>Tags</th><th>Last activity</th><th>Channels</th><th>Reward</th></tr></thead><tbody class="divide-y divide-white/10"><tr><td class="p-3">Maya R.</td><td>VIP · Regular</td><td>Points added</td><td>SMS · Email</td><td>115 away</td></tr><tr><td class="p-3">Jordan K.</td><td>Win-back</td><td>Campaign clicked</td><td>Email</td><td>Unlocked</td></tr></tbody></table></div>
+  </div>
+ </div></div>
+</section>
+
+<!-- ============================================================================ -->
+<!-- RESULTS: Campaign and loyalty measurement                                      -->
+<!-- ============================================================================ -->
+<section data-section="results" id="results" class="px-4 py-24 md:px-8 md:py-36">
+ <div class="max-w-7xl mx-auto text-center"><p class="kicker text-cyan-300">Measure what happens</p><h2 class="section-title mt-5">Don't guess if your marketing worked.</h2>
+ <div class="mt-14 grid grid-cols-2 md:grid-cols-6 gap-3"><div class="reveal module">SENT</div><div class="reveal module">OPENED</div><div class="reveal module">CLICKED</div><div class="reveal module">RETURNED</div><div class="reveal module">EARNED</div><div class="reveal module">REDEEMED</div></div>
+ <p class="mt-9 text-lg text-white/55 max-w-4xl mx-auto">Track email opens, clicks, unsubscribes and bounces—including contact-level engagement—alongside wallet and reward activity. Connect campaign engagement and loyalty activity to a clearer picture of what brings customers back. Revenue attribution depends on available transaction integrations.</p></div>
+</section>
+
+<!-- ============================================================================ -->
+<!-- PROGRAMS: Additional wallet program types                                      -->
+<!-- ============================================================================ -->
+<section data-section="programs" class="px-4 py-24 md:px-8 md:py-36 bg-gradient-to-b from-black to-[#191033] overflow-hidden">
+ <div class="max-w-7xl mx-auto"><p class="kicker text-pink-300">More than points</p><h2 class="section-title mt-5">One wallet. More ways to belong.</h2>
+ <div class="mt-14 flex gap-4 overflow-x-auto snap-x pb-6">
+  <article class="pass-card min-w-[260px] snap-center bg-gradient-to-br from-violet-600/45 via-black/10 to-transparent"><div class="badge text-cyan-200">Access</div><h3 class="text-3xl font-bold mt-14">Membership<br>& VIP</h3><p class="mt-4 text-sm text-white/70 max-w-[12rem]">A premium pass-style experience.</p></article>
+  <article class="pass-card min-w-[260px] snap-center"><div class="badge text-lime-200">Offer</div><h3 class="text-3xl font-bold mt-14">Digital<br>coupons</h3><p class="mt-4 text-sm text-white/70 max-w-[12rem]">Time-sensitive wallet offers.</p></article>
+  <article class="pass-card min-w-[260px] snap-center"><div class="badge text-pink-200">Entry</div><h3 class="text-3xl font-bold mt-14">Event<br>tickets</h3><p class="mt-4 text-sm text-white/70 max-w-[12rem]">Event-ready access passes.</p></article>
+  <article class="pass-card min-w-[260px] snap-center"><div class="badge text-orange-200">Balance</div><h3 class="text-3xl font-bold mt-14">Prepaid<br>value</h3><p class="mt-4 text-sm text-white/70 max-w-[12rem]">Stored-value wallet cards.</p></article>
+  <article class="pass-card min-w-[260px] snap-center"><div class="badge text-cyan-200">Connect</div><h3 class="text-3xl font-bold mt-14">Digital contact<br>cards</h3><p class="mt-4 text-sm text-white/70 max-w-[12rem]">High-touch contact sharing.</p></article>
+ </div><p class="text-white/50">Supported passes can offer tappable actions such as Book Now, Order Now, Visit Website, Call and Email, depending on device and platform support.</p></div>
+</section>
+
+<!-- ============================================================================ -->
+<!-- REFERRALS: Configurable member-code growth loop                                -->
+<!-- ============================================================================ -->
+<section data-section="referrals" class="px-4 py-24 md:px-8 md:py-36 bg-[#c9ff4a] text-black">
+ <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 items-center"><div><p class="kicker">Growth loop</p><h2 class="section-title mt-5">Retention can become acquisition.</h2><p class="mt-6 text-xl text-black/60">Unique member codes and custom tracking links can support configured referral programs on appropriate pass types.</p><div class="mt-8 inline-block bg-black text-white rounded-2xl p-5 font-bold">Refer a friend. You both earn a reward.</div></div>
+ <div class="reveal relative h-72"><div class="absolute left-1/2 top-4 -translate-x-1/2 rounded-full bg-black text-white w-24 h-24 grid place-items-center font-bold">MEMBER</div><svg viewBox="0 0 500 180" class="absolute inset-x-0 top-20 w-full" aria-hidden="true"><path id="branchPath" d="M250 0 C250 70 105 55 105 140 M250 0 C250 70 395 55 395 140" fill="none" stroke="#000" stroke-width="5"/></svg><div class="absolute left-[8%] bottom-0 rounded-full bg-white w-24 h-24 grid place-items-center font-bold">FRIEND 1</div><div class="absolute right-[8%] bottom-0 rounded-full bg-white w-24 h-24 grid place-items-center font-bold">FRIEND 2</div></div></div>
+</section>
+
+<!-- ============================================================================ -->
+<!-- SYSTEM: Connected platform overview                                            -->
+<!-- ============================================================================ -->
+<section data-section="system-overview" id="system" class="px-4 py-24 md:px-8 md:py-36 grid-glow">
+ <div class="max-w-7xl mx-auto text-center"><p class="kicker text-cyan-300">The complete system</p><h2 class="section-title mt-5">One customer relationship. Connected.</h2>
+ <div class="relative mt-16 min-h-[650px] flex items-center justify-center"><div class="phone sm reveal"><div class="island"></div><div class="screen grid place-items-center text-center"><div><p class="text-cyan-300 kicker">RetentionOS</p><p class="text-4xl font-black mt-4">Your customer.<br>Still connected.</p></div></div></div>
+ <div class="absolute inset-0 flex flex-wrap gap-3 justify-center content-between py-8 pointer-events-none"><span class="module">WALLET</span><span class="module">CRM</span><span class="module">REWARDS</span><span class="module">AUTOMATION</span><span class="module">SMS</span><span class="module">EMAIL</span><span class="module">PUSH</span><span class="module">LOCATION-AWARE</span><span class="module">ANALYTICS</span></div></div></div>
+</section>
+
+<!-- ============================================================================ -->
+<!-- DEMO: Final offer and locally validated request form                           -->
+<!-- ============================================================================ -->
+<section data-section="demo" id="demo" class="relative px-4 py-24 md:px-8 md:py-36 text-black overflow-hidden bg-gradient-to-br from-cyan-300 via-violet-300 to-pink-300">
+ <div class="absolute inset-0 bg-white/20"></div><div class="relative max-w-6xl mx-auto text-center"><p class="kicker">Your next best customer already knows you</p><h2 class="section-title mt-5">Stop paying to acquire the same customer twice.</h2><p class="mt-7 text-xl md:text-2xl max-w-3xl mx-auto text-black/65">Build a retention system designed to increase repeat visits, customer frequency and lifetime value.</p>
+ <div class="mt-12 max-w-4xl mx-auto bg-white/85 backdrop-blur-xl rounded-[2rem] p-5 md:p-10 shadow-2xl text-left">
+  <h3 class="text-2xl md:text-3xl font-black">Show me what this looks like for my business.</h3><p class="text-black/55 mt-2 max-w-2xl">Tell us about your business and we'll build a tailored retention concept around your customer journey.</p>
+  <form id="demoForm" class="grid sm:grid-cols-2 gap-4 mt-7" method="post">
+   <label class="text-sm font-bold">Name<input class="field mt-2" name="name" autocomplete="name" required></label>
+   <label class="text-sm font-bold">Business Name<input class="field mt-2" name="business_name" autocomplete="organization" required></label>
+   <label class="text-sm font-bold">Email<input class="field mt-2" type="email" name="email" autocomplete="email" required></label>
+   <label class="text-sm font-bold">Phone<input class="field mt-2" type="tel" name="phone" autocomplete="tel" required></label>
+   <label class="text-sm font-bold sm:col-span-2">Business Type<input class="field mt-2" name="business_type" required placeholder="Restaurant, salon, gym, retail…"></label>
+   <button class="cta dark sm:col-span-2 mt-2" type="submit">Show me the possibilities →</button>
+  </form>
+  <div id="formStatus" role="status" aria-live="polite" class="hidden mt-5 rounded-2xl bg-black text-white p-5"></div>
+  <p class="mt-4 text-xs text-black/45">Tell us about your business and we'll build a tailored retention concept around your customer journey.</p>
+ </div></div>
+</section>
+</main>
+<footer data-section="footer" class="px-4 py-10 md:px-8 bg-black border-t border-white/10">
+  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row gap-5 justify-between text-sm text-white/45"><p><b class="text-white">RETENTION<span class="text-cyan-300">OS</span></b> — Managed customer retention.</p><p>© 2026 · Digital loyalty, directly connected.</p></div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
