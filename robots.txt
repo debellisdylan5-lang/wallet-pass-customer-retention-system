@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://debellisdylan5-lang.github.io/wallet-pass-customer-retention-system/sitemap.xml
